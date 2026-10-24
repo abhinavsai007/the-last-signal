@@ -1,0 +1,936 @@
+# PROJECT: THE LAST SIGNAL
+## An Immersive Psychological Horror Hackathon Experience
+
+Act as a world-class creative developer, senior full-stack engineer, horror game designer, UI/UX designer, and cinematic motion designer.
+
+Build a complete, functional, immersive, horror-themed hackathon web application called "THE LAST SIGNAL".
+
+This must NOT look like a typical hackathon registration website. It must feel like a playable psychological horror escape-room game inspired by abandoned research facilities, analog horror, found-footage horror, supernatural mysteries, and cinematic survival games.
+
+The user should feel as if they have entered a haunted facility through their computer.
+
+The central gameplay concept is:
+
+"You entered to solve the mystery. Now find a way out."
+
+Every room, navigation action, interaction, and discovery should deepen the atmosphere of fear. The user must explore the facility, encounter paranormal events, solve puzzles, discover the story, and escape.
+
+Build a real, working application rather than a static visual mockup.
+
+---
+
+# 1. VISUAL IDENTITY AND ART DIRECTION
+
+Create a cinematic, realistic, dark horror aesthetic.
+
+COLOR PALETTE:
+- Background: near-black (#050505)
+- Secondary background: charcoal (#101010)
+- Blood red: #B30018
+- Dark crimson: #65000B
+- Ghostly white: #E8E8E8
+- Terminal green: #79FF8F
+- Muted gray: #777777
+
+VISUAL STYLE:
+- Abandoned underground research facility.
+- Flickering fluorescent lights.
+- Dark hallways with barely visible doors.
+- Security camera footage.
+- CCTV static and analog signal interference.
+- CRT monitors displaying corrupted messages.
+- Blood-red emergency lighting.
+- Fog, dust, smoke, and floating particles.
+- Glitch effects and distorted typography.
+- Mysterious silhouettes at the edge of visibility.
+- Broken machinery and abandoned laboratories.
+- Occasional cryptic messages appearing on screens.
+
+Use high-quality imagery, atmospheric backgrounds, cinematic shadows, subtle film grain, and carefully controlled visual effects.
+
+Typography should combine a bold cinematic display font with a monospaced terminal font.
+
+The website must look premium, professional, unsettling, and visually memorable.
+
+Avoid cartoon ghosts, childish Halloween graphics, colorful gaming interfaces, generic Bootstrap layouts, and ordinary corporate website templates.
+
+The horror must come from atmosphere, suspense, uncertainty, and unexpected events.
+
+---
+
+# 2. OPENING EXPERIENCE — THE SIGNAL
+
+When a visitor opens the website, do not immediately show a conventional homepage.
+
+Start with a nearly black screen.
+
+Display a small blinking red indicator.
+
+Show a terminal message character by character:
+
+"INITIALIZING EMERGENCY BROADCAST..."
+
+"SEARCHING FOR SURVIVING PERSONNEL..."
+
+"SIGNAL FOUND."
+
+"CONNECTION ESTABLISHED."
+
+Pause briefly.
+
+Then display:
+
+"WARNING: SOMETHING IS STILL INSIDE."
+
+Introduce subtle radio interference, CRT scan lines, a flickering light effect, and a distorted emergency transmission.
+
+Play optional atmospheric sound only after the user interacts with the page.
+
+Show a prominent button:
+
+[ ENTER THE FACILITY ]
+
+When clicked, transition into the main experience with a cinematic door-opening animation or a brief static transition.
+
+Include a visible SKIP INTRO button so visitors can access the experience without waiting.
+
+Make the introduction responsive and ensure it does not interfere with mobile usability.
+
+---
+
+# 3. MAIN LANDING PAGE
+
+Create a breathtaking horror landing page.
+
+The background should show a long, dark abandoned corridor with a single flickering red light at the end.
+
+The facility name should appear in large typography:
+
+THE LAST SIGNAL
+
+Underneath, display:
+
+"THE FACILITY WAS ABANDONED.
+THE EXPERIMENT WAS NOT."
+
+Show the tagline:
+
+"You entered to solve the mystery. Now find a way out."
+
+Include the following buttons:
+
+[ ENTER THE FACILITY ]
+[ THE INCIDENT REPORT ]
+[ TRANSMISSION LOG ]
+
+Show a subtle emergency status panel:
+
+FACILITY STATUS: COMPROMISED
+LIFE SIGNS: UNKNOWN
+CONTAINMENT: FAILED
+LAST TRANSMISSION: 03:17 AM
+
+Create a small interactive CCTV window in one corner. It should occasionally show static, interference, or a changing silhouette.
+
+Include a digital clock with a subtle flicker.
+
+On mouse movement, the lighting should react subtly, creating the impression that the visitor is carrying a flashlight through darkness.
+
+Make the cursor effect lightweight and disable it on touch devices.
+
+After the visitor has been on the page for a while, trigger a rare, brief supernatural event, such as a silhouette appearing in a window and disappearing when the visitor looks away.
+
+The event must be implemented using controlled timers rather than constant distracting animations.
+
+---
+
+# 4. FACILITY EXPLORATION SYSTEM
+
+Create an interactive facility map.
+
+The facility should contain these locations:
+
+01. RECEPTION
+02. SECURITY ROOM
+03. RESEARCH LABORATORY
+04. PATIENT WARD
+05. MAINTENANCE TUNNEL
+06. ARCHIVE ROOM
+07. THE RED ROOM
+08. THE EXIT
+
+Display each location as an interactive node on a dark blueprint-style map.
+
+Some rooms should initially be locked.
+
+The player must discover access cards, collect clues, solve puzzles, and unlock new areas.
+
+Each room must have its own distinct background, lighting, sound atmosphere, narrative, interactive objects, and paranormal events.
+
+Clicking a room must open that room's actual playable interface.
+
+Do not create eight identical pages with different titles.
+
+Every room should feel like a different part of the same abandoned facility.
+
+The facility map must update based on the player's progress.
+
+Show:
+- Discovered locations.
+- Locked doors.
+- Unlocked doors.
+- Collected key items.
+- Puzzle completion.
+- Current player location.
+
+Add a navigation button to return to the facility map.
+
+The user must be able to explore the application without getting trapped in a broken navigation state.
+
+---
+
+# 5. ROOM ONE — RECEPTION
+
+Create an abandoned reception area with a damaged reception desk, broken monitors, flickering lights, and a locked security door.
+
+The player must discover:
+- An old employee badge.
+- A handwritten note.
+- A damaged security terminal.
+
+Make the note interactive.
+
+When opened, it reveals:
+
+"IF YOU HEAR YOUR NAME OVER THE SPEAKERS, DO NOT ANSWER."
+
+Allow the user to inspect the security terminal.
+
+The terminal displays corrupted records and a locked access request.
+
+The user must locate the employee badge to unlock the security room.
+
+After collecting the badge, trigger a subtle sound cue and a brief light flicker.
+
+On returning to the reception room, a previously closed door should now be slightly open.
+
+The player must be able to interact with this door.
+
+Entering the door should lead to the next area.
+
+---
+
+# 6. ROOM TWO — SECURITY ROOM
+
+Build a room filled with old CCTV monitors.
+
+Show several camera feeds:
+- Reception.
+- Main Corridor.
+- Research Laboratory.
+- Patient Ward.
+
+Each camera feed should be interactive.
+
+The player can switch between camera feeds and inspect the environment.
+
+Include occasional static interference.
+
+One camera should show an empty corridor at first.
+
+After the player switches away and returns, a mysterious silhouette may appear in the corridor.
+
+The silhouette must not be constantly visible.
+
+Create an interactive security terminal.
+
+The player must discover a password by examining clues from the reception area and CCTV footage.
+
+The password unlocks an incident recording.
+
+Display a short story fragment:
+
+"CONTAINMENT BREACH CONFIRMED.
+ALL PERSONNEL MUST PROCEED TO THE EMERGENCY EXIT.
+DO NOT FOLLOW VOICES FROM UNAUTHORIZED LOCATIONS."
+
+Once the terminal is unlocked, reveal the location of a hidden laboratory key.
+
+Include a small chance-based paranormal event, but ensure it never blocks the main puzzle.
+
+---
+
+# 7. ROOM THREE — RESEARCH LABORATORY
+
+Create a dark experimental laboratory.
+
+Include broken glass containers, abandoned equipment, warning signs, red emergency lights, and a damaged computer.
+
+The computer displays a corrupted experiment log.
+
+The player must solve a symbol-sequence puzzle to restore the terminal.
+
+Provide four or five symbols that must be arranged in the correct order.
+
+Use clues found in the security room to determine the sequence.
+
+When the player enters the correct sequence:
+- Restore the terminal.
+- Reveal an experiment report.
+- Unlock the patient ward.
+- Trigger a brief visual glitch.
+
+Experiment report:
+
+"PROJECT NIGHTFALL WAS NEVER DESIGNED TO CREATE LIFE.
+
+IT WAS DESIGNED TO DETECT SOMETHING THAT WAS ALREADY HERE."
+
+Include an optional hidden document that reveals additional story details.
+
+Make the puzzle functional, with validation, feedback, and a retry mechanism.
+
+---
+
+# 8. ROOM FOUR — PATIENT WARD
+
+Create a disturbing abandoned hospital ward inside the facility.
+
+Include old patient beds, hanging curtains, flickering lights, damaged medical monitors, and long shadows.
+
+Avoid graphic gore.
+
+The horror should rely on environmental storytelling and unsettling events.
+
+Create an interactive patient-record system.
+
+The player must inspect three patient records and discover a shared code.
+
+One record should contain a strange handwritten message:
+
+"THE EXIT IS NOT WHERE THE MAP SAYS IT IS."
+
+Create an encounter where the player hears a noise from behind a curtain.
+
+The player can choose to:
+- Investigate the curtain.
+- Leave the room.
+
+If the player investigates, trigger a brief silhouette reveal followed by a sudden blackout and recovery.
+
+If the player leaves, allow the player to continue without the event.
+
+The encounter must be suspenseful rather than excessively graphic.
+
+Use the discovered patient code to unlock the maintenance tunnel.
+
+---
+
+# 9. ROOM FIVE — MAINTENANCE TUNNEL
+
+Create a narrow, dark industrial tunnel.
+
+Use emergency lights, exposed cables, metal doors, steam effects, and subtle camera shake.
+
+The player must restore power to the facility.
+
+Create a functional circuit puzzle.
+
+The user must connect three power nodes in the correct sequence.
+
+Show visual feedback when the circuit is incomplete.
+
+Once the circuit is restored:
+- Emergency lights activate.
+- The facility map becomes available.
+- A previously inaccessible door opens.
+- A distorted announcement plays if audio is enabled.
+
+Display the message:
+
+"POWER RESTORED.
+
+UNAUTHORIZED MOVEMENT DETECTED."
+
+Introduce the concept of a pursuing entity.
+
+The player must complete the room's objective and leave before a visible countdown expires.
+
+If the countdown expires, trigger a short failure animation and allow the player to retry.
+
+Do not delete the player's collected items or completed puzzles when they retry.
+
+The countdown must work reliably and be usable on mobile.
+
+---
+
+# 10. ROOM SIX — ARCHIVE ROOM
+
+Create a massive abandoned archive filled with filing cabinets, dusty shelves, damaged tapes, and old documents.
+
+The player must investigate the facility's history.
+
+Provide several inspectable documents and audio-transcript entries.
+
+Include a hidden document explaining the origin of Project Nightfall.
+
+Create a file-search puzzle.
+
+The user must find three specific records using clues from earlier rooms.
+
+Each correct record reveals part of a secret access code.
+
+Combine the three fragments to unlock a hidden file.
+
+The hidden file should reveal that the facility's emergency evacuation system was intentionally disabled.
+
+Display:
+
+"THE INCIDENT WAS NOT AN ACCIDENT.
+
+SOMEONE LOCKED THE DOORS FROM THE OUTSIDE."
+
+Completing this room unlocks the Red Room.
+
+---
+
+# 11. ROOM SEVEN — THE RED ROOM
+
+This should be the most intense location before the final escape.
+
+Use deep red emergency lighting, distorted architecture, minimal visibility, subtle visual warping, and unsettling ambient sounds.
+
+The room should feel different from the rest of the facility.
+
+Introduce an entity called THE OBSERVER.
+
+The Observer must be represented by a mysterious silhouette or distorted figure rather than a graphic monster.
+
+The entity should appear briefly at the edges of the screen.
+
+Create a mechanic where the player must observe environmental clues without looking directly at the entity for too long.
+
+The user must identify a hidden sequence from objects scattered throughout the room.
+
+Correctly identifying the sequence opens the final exit terminal.
+
+Incorrect answers trigger a brief interference effect and reset the current attempt.
+
+Include a final story revelation:
+
+"YOU WERE NOT INVESTIGATING THE SIGNAL.
+
+THE SIGNAL WAS WAITING FOR YOU."
+
+Make this moment cinematic, memorable, and visually powerful.
+
+Do not make the interaction impossible to complete.
+
+---
+
+# 12. FINAL ROOM — THE EXIT
+
+Create a final escape sequence.
+
+The player reaches an emergency exit terminal.
+
+The terminal requires:
+- The access credentials collected earlier.
+- The recovered experiment code.
+- The archive access sequence.
+
+Display the collected clues as an interactive inventory.
+
+The player must enter the correct combination to activate the emergency exit.
+
+When the correct combination is entered:
+- The emergency doors unlock.
+- The screen flashes white.
+- The audio cuts out.
+- A short cinematic transition plays.
+
+Then display:
+
+"CONNECTION LOST."
+
+Pause.
+
+Display:
+
+"SUBJECT STATUS: UNKNOWN."
+
+After another short pause, reveal the ending.
+
+Provide three possible endings based on the player's decisions and discoveries:
+
+ENDING A — ESCAPED
+
+The player successfully escapes the facility.
+
+ENDING B — THE LAST TRANSMISSION
+
+The player escapes but discovers that the signal has followed them.
+
+ENDING C — CONTAINMENT
+
+The player fails to complete the necessary objectives and remains trapped inside.
+
+Each ending must have its own visual presentation and final message.
+
+Provide a RESTART EXPERIENCE button.
+
+A restart should correctly reset the gameplay state.
+
+---
+
+# 13. DYNAMIC HAUNTING ENGINE
+
+This is one of the most important features.
+
+Create a centralized, configurable haunting-event system.
+
+The entire application should feel haunted, not just the room backgrounds.
+
+Possible events include:
+
+1. Lights flicker unexpectedly.
+2. A shadow appears behind an object.
+3. A CCTV feed briefly shows a mysterious figure.
+4. A terminal displays a message that was not there before.
+5. A door changes its state.
+6. Radio static interrupts the room.
+7. The screen briefly distorts.
+8. A mysterious silhouette appears at the edge of the viewport.
+9. An emergency alert suddenly appears.
+10. A previously visited room shows a subtle environmental change.
+11. A short whispered transmission plays when sound is enabled.
+12. A room briefly displays corrupted text.
+13. The facility map shows a new unexplained signal.
+14. A terminal appears to respond to the user's previous actions.
+
+Use a weighted random event system.
+
+Events must be:
+- Triggered by specific interactions or controlled timers.
+- Different in different rooms.
+- Infrequent enough to remain surprising.
+- Safe for navigation and puzzle completion.
+- Compatible with mobile devices.
+- Configurable through a central event registry.
+
+Do not trigger every event at once.
+
+Avoid repetitive jump scares.
+
+Make the visitor question whether the interface is behaving normally.
+
+Some events should be cosmetic, while others reveal genuine clues.
+
+Ensure that every essential clue is also discoverable through a reliable gameplay path.
+
+Do not create fake system alerts that imitate actual operating-system security warnings or falsely claim that the user's device is infected.
+
+---
+
+# 14. INTERACTIVE TERMINAL SYSTEM
+
+Create reusable terminal interfaces throughout the website.
+
+Terminal design:
+- Black background.
+- Green or red monospace text.
+- Blinking cursor.
+- Character-by-character typing.
+- CRT scan lines.
+- Command prompt.
+- Glitch effects.
+- Error messages.
+- Success messages.
+
+Example terminal:
+
+NIGHTFALL OS v4.09
+
+> CONNECTING TO FACILITY NETWORK...
+
+> ACCESS DENIED
+
+> UNKNOWN USER DETECTED
+
+> LISTENING...
+
+Allow users to enter commands where appropriate.
+
+Provide hints if they are stuck.
+
+Terminal puzzles must validate input correctly and provide clear retry options.
+
+Create different terminal states for locked, unlocked, corrupted, and compromised systems.
+
+Use a reusable component rather than implementing each terminal separately.
+
+---
+
+# 15. HACKATHON INFORMATION
+
+Although the website is a playable horror experience, it must also function as a real hackathon competition website.
+
+Create a dedicated HACKATHON section integrated into the haunted facility.
+
+Include the following sections:
+
+A. EVENT BRIEFING
+- Hackathon title.
+- Short event description.
+- Theme and challenge.
+- Event date.
+- Start and end time.
+- Venue or online participation details.
+
+B. CHALLENGE FILES
+- Problem statements.
+- Challenge categories.
+- Submission requirements.
+- Rules and regulations.
+
+C. SURVIVOR REGISTRATION
+Create a registration form with:
+- Full name.
+- Email address.
+- Phone number.
+- Team name.
+- Team members.
+- College or organization.
+- Project idea.
+- Preferred challenge category.
+
+D. MISSION RULES
+- Eligibility.
+- Team size.
+- Project submission guidelines.
+- Judging criteria.
+- Code of conduct.
+- Deadlines.
+
+E. EVENT TIMELINE
+Show the important stages of the hackathon as a classified mission timeline.
+
+F. TRANSMISSION CONTACT
+Display organizer contact information and social links using configurable placeholders.
+
+G. FINAL SUBMISSION
+Create a submission interface for:
+- Project name.
+- Project description.
+- Repository link.
+- Demo link.
+- Team details.
+
+H. LEADERBOARD
+Create a dark leaderboard showing teams, scores, and ranks.
+
+Make the hackathon information accessible without forcing users to complete the horror game.
+
+Use realistic placeholder content only where actual event details are unavailable.
+
+Keep all event information configurable in one central file.
+
+---
+
+# 16. REGISTRATION AND DATA HANDLING
+
+Implement a functional registration experience.
+
+Use a proper backend or supported database integration if available.
+
+Store registrations securely.
+
+Validate required fields on both client and server.
+
+Prevent duplicate registrations where appropriate.
+
+Display clear loading, success, and error states.
+
+Do not expose private information or database credentials in frontend code.
+
+Do not claim that registration or project submission has succeeded unless the data was actually saved successfully.
+
+If no backend is configured, create a clearly identified demo mode and explain which steps are needed to enable real registration.
+
+Keep the user experience functional even in demo mode.
+
+---
+
+# 17. SOUND DESIGN
+
+Create an optional horror sound system.
+
+Possible sounds:
+- Low-frequency atmospheric drones.
+- Distant metallic impacts.
+- Radio static.
+- Fluorescent light buzzing.
+- Distant footsteps.
+- Wind through corridors.
+- Distorted emergency announcements.
+- Subtle reversed audio textures.
+
+Provide:
+- Sound ON/OFF toggle.
+- Master volume control.
+- Separate ambient and effect volume settings if practical.
+
+Do not autoplay sound before user interaction.
+
+Do not play extremely loud sounds.
+
+Do not require sound to solve puzzles.
+
+Respect browser autoplay restrictions and remember sound preferences during the session.
+
+Provide a reduced-motion mode and a setting to reduce intense visual effects.
+
+---
+
+# 18. CINEMATIC ANIMATIONS
+
+Use animations to build tension.
+
+Implement:
+- Slow camera-like movement across backgrounds.
+- Flickering lights.
+- Smooth transitions between rooms.
+- CRT distortion.
+- Subtle screen shake during supernatural events.
+- Typewriter text.
+- Doors opening and closing.
+- CCTV signal interference.
+- Blackout transitions.
+- Emergency lights activating.
+- Fog and particle effects.
+- Brief, controlled visual interruptions.
+
+Animations should be polished and performant.
+
+Prefer CSS animations and lightweight rendering techniques.
+
+Use WebGL or a 3D library only where it meaningfully improves the experience.
+
+Avoid unnecessary heavy effects that make the application slow.
+
+Support prefers-reduced-motion.
+
+The site must remain usable if animation effects are disabled.
+
+---
+
+# 19. TECHNICAL IMPLEMENTATION
+
+Build the application using a modern, maintainable web stack supported by the current environment.
+
+Preferred stack:
+- React.
+- TypeScript.
+- Vite where supported.
+- Tailwind CSS or clean modular CSS.
+- React Router or an equivalent routing system.
+- Lucide icons or equivalent.
+- A supported backend or database for real registration and submissions.
+
+If the environment uses a different supported stack, adapt accordingly rather than breaking the application.
+
+Organize the application into reusable components.
+
+Suggested components:
+- IntroSequence
+- HorrorLandingPage
+- FacilityMap
+- RoomRenderer
+- RoomNavigation
+- InteractiveObject
+- PuzzleEngine
+- TerminalInterface
+- InventoryPanel
+- CCTVMonitor
+- HauntingEngine
+- AudioController
+- HackathonDashboard
+- RegistrationForm
+- ProjectSubmissionForm
+- Leaderboard
+- EndingSequence
+- AccessibilitySettings
+
+Create a centralized game-state model containing:
+- Current room.
+- Unlocked rooms.
+- Collected items.
+- Discovered clues.
+- Completed puzzles.
+- Player choices.
+- Haunting events triggered.
+- Event registration state.
+- Current ending.
+
+Persist gameplay progress using localStorage where appropriate.
+
+Handle missing, invalid, or outdated saved state safely.
+
+Ensure refreshes do not unexpectedly destroy progress.
+
+Use a clean separation between game logic, content data, visual components, and backend operations.
+
+Implement proper error handling and loading states.
+
+---
+
+# 20. GAMEPLAY LOGIC
+
+The website must have an actual progression system.
+
+Example progression:
+
+Reception
+  ↓
+Collect employee badge
+  ↓
+Security Room
+  ↓
+Discover terminal password
+  ↓
+Research Laboratory
+  ↓
+Solve symbol puzzle
+  ↓
+Patient Ward
+  ↓
+Discover patient code
+  ↓
+Maintenance Tunnel
+  ↓
+Restore power
+  ↓
+Archive Room
+  ↓
+Recover secret access sequence
+  ↓
+The Red Room
+  ↓
+Unlock final terminal
+  ↓
+Escape
+
+Implement dependencies between rooms and puzzles.
+
+Do not unlock every room immediately.
+
+Do not make every clue appear automatically.
+
+Make exploration meaningful.
+
+Provide a hint system with progressive hints so users can finish the game without abandoning it.
+
+Make important objects visibly interactive through subtle hover effects or contextual prompts.
+
+Include a journal that records discovered clues and story events.
+
+Provide a restart confirmation before deleting saved game progress.
+
+The hackathon registration and information pages must remain accessible regardless of game progress.
+
+---
+
+# 21. RESPONSIVE DESIGN
+
+The experience must work on:
+- Desktop computers.
+- Laptops.
+- Tablets.
+- Mobile phones.
+
+For desktop:
+- Use cinematic backgrounds.
+- Support interactive map exploration.
+- Add subtle cursor-based lighting.
+
+For mobile:
+- Use touch-friendly navigation.
+- Replace cursor lighting with touch-friendly effects.
+- Simplify complex map interactions.
+- Ensure puzzles fit the screen.
+- Keep text readable.
+- Prevent accidental navigation.
+- Provide clear controls for sound, settings, and returning to the map.
+
+Do not sacrifice usability for horror effects.
+
+---
+
+# 22. ACCESSIBILITY AND USER SAFETY
+
+Include:
+- Skip intro.
+- Sound controls.
+- Reduced motion.
+- Visual intensity settings.
+- Keyboard navigation.
+- Visible focus indicators.
+- Accessible form labels.
+- Sufficient text contrast.
+- Pause controls for timed sequences where appropriate.
+- Clear recovery options after failed puzzles.
+
+Avoid flashing effects that could trigger photosensitive reactions.
+
+Do not use intense rapid strobing.
+
+Do not use real device notifications, camera access, microphone access, or location access as surprise horror mechanics.
+
+Never pretend that the application has accessed private files or compromised the user's device.
+
+Keep the horror fictional and contained within the website.
+
+---
+
+# 23. FINAL QUALITY REQUIREMENTS
+
+The final result must feel like a combination of:
+- A cinematic psychological horror game.
+- An interactive escape room.
+- An analog horror experience.
+- A classified underground research facility.
+- A professional hackathon platform.
+
+Prioritize a visually impressive first impression, genuinely interactive rooms, functional puzzles, meaningful exploration, and a consistent horror atmosphere.
+
+Every clickable element must have a meaningful action.
+
+Every room must have a distinct purpose.
+
+Every puzzle must have working logic.
+
+Every navigation route must work.
+
+All forms must have validation.
+
+The application must not contain broken links, dead buttons, unfinished sections, or nonfunctional placeholder interactions disguised as finished features.
+
+Use original narrative content and a consistent fictional universe.
+
+If a feature depends on an unavailable external service, implement the best working local alternative and explain the integration requirement.
+
+Do not stop after generating the landing page.
+
+Build the complete application, including the room system, game state, puzzles, haunting events, endings, hackathon information, registration interface, and responsive layouts.
+
+After implementation, test the main user journey from the opening screen through the facility rooms and final escape, as well as the registration and submission interfaces.
+
+Fix any errors you discover.
+
+The final experience should make the visitor feel that something is watching them from inside the screen.
+
+PROJECT NAME: THE LAST SIGNAL
+
+TAGLINE: "You entered to solve the mystery. Now find a way out."
+
+BEGIN BUILDING THE COMPLETE APPLICATION NOW.

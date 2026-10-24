@@ -2,5 +2,7 @@
   "name": "The Last Signal",
   "description": "An immersive psychological horror escape-room game experience set in an abandoned underground research facility. You entered to solve the mystery. Now find a way out.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }

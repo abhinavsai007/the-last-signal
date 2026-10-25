@@ -145,7 +145,7 @@ export const ArchiveRoom: React.FC<ArchiveRoomProps> = ({
               <span>CLASSIFIED DATABASE INDEX ({archiveFilesFound.length}/3 SECURED)</span>
             </div>
             <p className="text-zinc-400 text-[11px] leading-relaxed">
-              Query the microfiche reels for the three pivotal incident files: Genesis, Incident Timeline 03:17, and Evacuation Override.
+              Query the microfiche reels for historical logs detailing facility origin, critical timestamps, and surface override protocols.
             </p>
 
             {/* Search Input */}

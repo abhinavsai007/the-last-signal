@@ -120,25 +120,20 @@ export const ExitRoom: React.FC<ExitRoomProps> = ({
                 <span className="font-bold">{hasBadge ? 'READY' : 'MISSING'}</span>
               </div>
 
-              <div className="p-2.5 border bg-emerald-950/30 border-emerald-800 text-emerald-300 flex items-center justify-between">
+              <div className={`p-2.5 border flex items-center justify-between ${
+                hasPatientCode ? 'bg-emerald-950/30 border-emerald-800 text-emerald-300' : 'bg-red-950/30 border-red-900 text-red-400'
+              }`}>
                 <span>2. Patient Ward Frequency Code</span>
-                <span className="font-bold font-mono">[ 482 ]</span>
+                <span className="font-bold font-mono">{hasPatientCode ? 'DISCOVERED' : 'MISSING'}</span>
               </div>
 
               <div className={`p-2.5 border flex items-center justify-between ${
                 hasOutsideDossier ? 'bg-emerald-950/30 border-emerald-800 text-emerald-300' : 'bg-amber-950/30 border-amber-800 text-amber-400'
               }`}>
                 <span>3. Outside Override Cipher</span>
-                <span className="font-bold font-mono">{hasOutsideDossier ? 'NIGHTFALL-0317' : 'UNRECOVERED'}</span>
+                <span className="font-bold font-mono">{hasOutsideDossier ? 'RECOVERED' : 'UNRECOVERED'}</span>
               </div>
             </div>
-
-            <button
-              onClick={handleAutoFill}
-              className="w-full py-2 bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-zinc-300 hover:text-white font-bold text-[11px] cursor-pointer mt-2"
-            >
-              [AUTO-LOAD CREDENTIALS FROM INVENTORY]
-            </button>
           </div>
         </div>
 
@@ -191,7 +186,7 @@ export const ExitRoom: React.FC<ExitRoomProps> = ({
                 type="text"
                 value={researchCodeInput}
                 onChange={e => setResearchCodeInput(e.target.value)}
-                placeholder="e.g. 482"
+                placeholder="ENTER 3-DIGIT PATIENT CODE..."
                 className="w-full bg-zinc-950 border border-zinc-700 p-2.5 text-white font-mono text-sm focus:border-red-500 focus:outline-none"
               />
             </div>
@@ -205,7 +200,7 @@ export const ExitRoom: React.FC<ExitRoomProps> = ({
                 type="text"
                 value={cipherInput}
                 onChange={e => setCipherInput(e.target.value)}
-                placeholder="e.g. NIGHTFALL-0317"
+                placeholder="ENTER SURFACE OVERRIDE CIPHER..."
                 className="w-full bg-zinc-950 border border-zinc-700 p-2.5 text-white font-mono text-sm focus:border-red-500 focus:outline-none"
               />
             </div>

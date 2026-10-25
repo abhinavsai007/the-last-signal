@@ -165,7 +165,7 @@ export const MaintenanceTunnelRoom: React.FC<MaintenanceTunnelRoomProps> = ({
             </p>
             <div className="p-3 bg-zinc-900 border border-zinc-800 text-[11px] text-zinc-300">
               <span className="text-amber-400 font-bold block mb-1">CIRCUIT RULES:</span>
-              Engage turbine generation first (Alpha), step up the line voltage (Beta), then feed the sub-sector distribution bus (Gamma).
+              Trace the current pathway: initialize turbine power, raise system voltage, then feed the sub-sector distribution bus.
             </div>
           </div>
         </div>

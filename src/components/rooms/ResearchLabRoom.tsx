@@ -174,7 +174,7 @@ export const ResearchLabRoom: React.FC<ResearchLabRoomProps> = ({
           <div className="p-4 bg-red-950/20 border border-red-900/40 text-xs text-zinc-400 space-y-2">
             <span className="font-bold text-red-400 block tracking-wider">LABORATORY KEYTAG INSCRIPTION:</span>
             <p className="italic text-zinc-300">
-              "Sequence begins with the Caduceus helix; resonance follows the biohazard seal, through the containment matrix, into the resonator coil."
+              "The sequence aligns from origin to breach, lattice to coil."
             </p>
           </div>
         </div>
@@ -248,10 +248,10 @@ export const ResearchLabRoom: React.FC<ResearchLabRoomProps> = ({
                     <span>ETCHED GLASS LITURGY // GENESIS SEQUENCE:</span>
                   </div>
                   <p className="text-zinc-400 italic">
-                    "I. First, life was coiled upon the winged serpents [Caduceus]...<br />
-                    II. Then the biological contagion broke containment [Biohazard]...<br />
-                    III. The crystalline lattice imprisoned the anomalous mass [Matrix]...<br />
-                    IV. Until the sonic coil amplified the scream into our minds [Resonator]."
+                    "I. First came the dual serpents of healing...<br />
+                    II. Then the biological contagion broke containment...<br />
+                    III. Bound within the crystalline matrix...<br />
+                    IV. Until the coil amplified the scream into our minds."
                   </p>
                 </div>
 

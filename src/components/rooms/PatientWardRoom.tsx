@@ -503,7 +503,7 @@ export const PatientWardRoom: React.FC<PatientWardRoomProps> = ({
             HATCH TO MAINTENANCE TUNNEL (ROOM 05): {tunnelUnlocked ? 'OPEN' : 'LOCKED'}
           </span>
           <span className="text-[11px] text-zinc-500">
-            {tunnelUnlocked ? 'Industrial steam release valve active.' : 'Requires 3-digit patient code (482).'}
+            {tunnelUnlocked ? 'Industrial steam release valve active.' : 'Requires 3-digit patient code.'}
           </span>
         </div>
 

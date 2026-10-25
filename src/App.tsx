@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { RoomId, InventoryItem, JournalEntry, GameSettings, PuzzlesState, HauntingEvent } from './types/game';
 import { OpeningSequence } from './components/OpeningSequence';
 import { LandingPage } from './components/LandingPage';
+import { IntroVideoSequence } from './components/IntroVideoSequence';
 import { FacilityMap } from './components/FacilityMap';
 import { AudioController } from './components/AudioController';
 import { AccessibilityModal } from './components/AccessibilityModal';
@@ -27,7 +28,7 @@ import { ExitRoom } from './components/rooms/ExitRoom';
 import { audioEngine } from './services/audioEngine';
 import { hauntingEngine } from './services/hauntingEngine';
 
-type ActiveView = 'opening' | 'landing' | 'facility_map' | 'room' | 'ending';
+type ActiveView = 'opening' | 'landing' | 'intro_video' | 'facility_map' | 'room' | 'ending';
 
 const DEFAULT_SETTINGS: GameSettings = {
   soundEnabled: false,
@@ -245,9 +246,17 @@ export default function App() {
       {/* VIEW: Main Landing Page */}
       {activeView === 'landing' && (
         <LandingPage
-          onEnterFacility={() => setActiveView('facility_map')}
+          onEnterFacility={() => setActiveView('intro_video')}
           onOpenIncidentReport={() => setIsIncidentReportOpen(true)}
           onOpenTransmissionLog={() => setIsTransmissionLogOpen(true)}
+          reducedMotion={settings.reducedMotion}
+        />
+      )}
+
+      {/* VIEW: Cinematic Horror Intro Video */}
+      {activeView === 'intro_video' && (
+        <IntroVideoSequence
+          onComplete={() => setActiveView('facility_map')}
           reducedMotion={settings.reducedMotion}
         />
       )}
